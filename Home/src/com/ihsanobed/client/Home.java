@@ -1,6 +1,7 @@
 package com.ihsanobed.client;
 
 import com.google.gwt.core.client.EntryPoint;
+import com.google.gwt.core.client.GWT;
 
 import com.google.gwt.user.client.ui.Anchor;
 
@@ -9,6 +10,8 @@ import com.google.gwt.user.client.ui.HTML;
 import com.google.gwt.user.client.ui.RootPanel;
 
 public class Home implements EntryPoint {
+	
+	private LogInConstants constants = GWT.create(LogInConstants.class);
 
 
 	public void onModuleLoad() {
@@ -19,7 +22,7 @@ public class Home implements EntryPoint {
 		Anchor sendmail = new Anchor();
 		
 		loginLink.setHref("/en-US/login.gwt");
-		loginLink.setHTML("<h2>LogIn Page</h2>");
+		loginLink.setHTML("<h2>" + constants.logIn() + "</h2>");
 
 		
 		sinupLink.setHref("/en-US/signup.gwt");
