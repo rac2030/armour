@@ -17,6 +17,7 @@ public class LogIn extends HttpServlet {
 			" <title>LogIn Page</title>" + 
 			"<script type=\"text/javascript\" language=\"javascript\"" +
 			" src=\"../login/login.nocache.js\"></script>" +
+			"<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">" +
 			"</head>" + 
 			"<body></body>" + 
 			"</html>";// end of the HTML String body 
