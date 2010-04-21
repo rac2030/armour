@@ -15,9 +15,10 @@ public class Home extends HttpServlet {
 		String HTML = 
 			"<!doctype html><html><head>" +
 			" <title>LogIn Page</title>" + 
+			"<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">" +
+			"<meta name=\"gwt:property\" content=\"locale=de\">" +
 			"<script type=\"text/javascript\" language=\"javascript\"" +
 			" src=\"../home/home.nocache.js\"></script>" +
-			"<meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\">" +
 			"</head>" + 
 			"<body></body>" + 
 			"</html>";// end of the HTML String body 
