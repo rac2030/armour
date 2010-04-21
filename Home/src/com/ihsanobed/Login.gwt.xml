@@ -11,6 +11,8 @@
   
   
   <entry-point class='com.ihsanobed.client.LogIn'/>
+  
+  <!-- to extends the Germany locale -->
   <extend-property name="locale" values="de"/>
 
   
