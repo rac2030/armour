@@ -1,12 +1,16 @@
 package com.ihsanobed.shared;
 
-//import java.util.regex.Matcher;
-//import java.util.regex.Pattern;
-
 public class Verification {
 
 
     private static final String AT ="@";
+    
+/***********************************************************************************************
+ *  We validate the Top Level Domain depending on IANA Root Zone Database                      *
+ *  For more details visit this link "http://www.iana.org/domains/root/db/"                    *
+ *  <- We don't include any TLD still under testing on IANA Root Zone Database ->              *
+ ***********************************************************************************************
+ */
 
 	private static final String TLD[] = {
 
@@ -37,7 +41,7 @@ public class Verification {
 			"za","zm","zw"
 			};
 
-/***********************Starting email validatin *******************************/
+/***********************Starting email validation *******************************/
 
         public static String reFormat(String email){
             return (email.toLowerCase()).trim();
@@ -173,7 +177,7 @@ public class Verification {
 	}// end of isValidEmail function
 
 
-/***********************Ending email validatin *******************************/
+/***********************Ending email validation *******************************/
 
 
 	public static boolean isValidPass(String name){
